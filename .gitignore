@@ -42,6 +42,7 @@ Thumbs.db
 data/
 *.json
 debug_kaggas.json
+!data/kaggas.json
 
 # Docker
 .docker/

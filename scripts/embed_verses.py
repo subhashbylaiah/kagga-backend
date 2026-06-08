@@ -11,7 +11,7 @@ from tqdm import tqdm
 QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
 OPENAI_KEY = os.getenv("OPENAI_API_KEY")
 COLLECTION_NAME = "kagga_verses"
-DATA_PATH = Path(__file__).parent.parent.parent / "data" / "kaggas.json"
+DATA_PATH = Path(__file__).parent.parent / "data" / "kaggas.json"
 
 if not OPENAI_KEY:
     print("ERROR: OPENAI_API_KEY not set")

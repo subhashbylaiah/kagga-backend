@@ -37,6 +37,11 @@ async def lifespan(app: FastAPI):
     global vector_search, rag_pipeline
     qdrant_url = os.getenv("QDRANT_URL", "http://localhost:6333")
     openai_key = os.getenv("OPENAI_API_KEY")
+    print("=== ENV DEBUG ===")
+    print(f"OPENAI_API_KEY: {openai_key[:10] if openai_key else 'NOT SET'}")
+    print(f"QDRANT_URL: {qdrant_url}")
+    print(f"All env vars: {list(os.environ.keys())}")
+    print("=================")
     if not openai_key:
         raise RuntimeError("OPENAI_API_KEY not set")
     vector_search = VectorSearch(qdrant_url=qdrant_url)

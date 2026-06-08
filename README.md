@@ -152,4 +152,4 @@ Railway: FastAPI (uvicorn)
 | Qdrant connection refused | Use **internal** URL, not public |
 | Embedding script OOM | Reduce `batch_size` in `embed_verses.py` |
 | Slow first query | Qdrant cold start; subsequent queries fast |
-| CORS errors | `allow_origins=["*"]` already in `main.py` |
+| CORS errors | `allow_origins=["*"]` already in `main.py` |# force rebuild Sun Jun  7 21:45:58 PDT 2026

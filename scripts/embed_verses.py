@@ -21,12 +21,12 @@ client = QdrantClient(url=QDRANT_URL)
 openai = AsyncOpenAI(api_key=OPENAI_KEY)
 
 
-async def embed_text(text: str) -> list[float]:
+async def embed_batch(texts: list[str]) -> list[list[float]]:
     response = await openai.embeddings.create(
         model="text-embedding-3-small",
-        input=text,
+        input=texts,
     )
-    return response.data[0].embedding
+    return [d.embedding for d in response.data]
 
 
 def load_verses() -> list[dict]:
@@ -58,30 +58,35 @@ async def main():
     verses = load_verses()
     create_collection()
 
-    points = []
-    for v in tqdm(verses, desc="Embedding verses"):
-        text = f"{v['kannada_text']}\n{v['transliteration']}\n{v['english_translation']}\n{v['meaning']}"
-        vector = await embed_text(text)
-
-        points.append(
-            PointStruct(
-                id=v["id"],
-                vector=vector,
-                payload={
-                    "verse_number": v["id"],
-                    "kannada_text": v["kannada_text"],
-                    "transliteration": v["transliteration"],
-                    "english_translation": v["english_translation"],
-                    "meaning": v["meaning"],
-                    "themes": v.get("themes", []),
-                },
-            )
-        )
-
     batch_size = 100
-    for i in tqdm(range(0, len(points), batch_size), desc="Upserting to Qdrant"):
-        batch = points[i : i + batch_size]
-        client.upsert(collection_name=COLLECTION_NAME, points=batch)
+    points = []
+
+    for i in tqdm(range(0, len(verses), batch_size), desc="Embedding batches"):
+        batch = verses[i:i+batch_size]
+        texts = [
+            f"{v['kannada_text']}\n{v['transliteration']}\n{v['english_translation']}\n{v['meaning']}"
+            for v in batch
+        ]
+        vectors = await embed_batch(texts)
+
+        for v, vector in zip(batch, vectors):
+            points.append(
+                PointStruct(
+                    id=v["id"],
+                    vector=vector,
+                    payload={
+                        "verse_number": v["id"],
+                        "kannada_text": v["kannada_text"],
+                        "transliteration": v["transliteration"],
+                        "english_translation": v["english_translation"],
+                        "meaning": v["meaning"],
+                        "themes": v.get("themes", []),
+                    },
+                )
+            )
+
+    for i in tqdm(range(0, len(points), 100), desc="Upserting to Qdrant"):
+        client.upsert(collection_name=COLLECTION_NAME, points=points[i:i+100])
 
     print(f"Done! Upserted {len(points)} verses to Qdrant")
 

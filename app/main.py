@@ -20,6 +20,7 @@ class AskResponse(BaseModel):
     answer: str
     citations: list[Verse]
     cross_references: list[dict]
+    suggested_questions: list[str] = []
 
 
 class SearchRequest(BaseModel):

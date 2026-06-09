@@ -17,6 +17,10 @@ Given a user's question and relevant Kagga verses, synthesize a comprehensive an
 
 Be profound but accessible. No fluff. No disclaimers."""
 
+FOLLOWUP_PROMPT = """Based on this Kagga answer, suggest 3 short follow-up questions the user might naturally want to ask next.
+Return only a JSON array of 3 strings, nothing else. Each question should be concise (under 10 words).
+Example: ["What does Kagga say about grief?", "How to practice detachment daily?", "Tell me more about verse 42"]"""
+
 
 USER_PROMPT_TEMPLATE = """Question: {question}
 Language: {language}
@@ -61,11 +65,13 @@ class RAGPipeline:
         answer = response.choices[0].message.content or ""
 
         cross_refs = self._extract_cross_references(answer)
+        suggested_questions = await self._generate_followups(question, answer, language)
 
         return {
             "answer": answer,
             "citations": [v.model_dump() for v in verses],
             "cross_references": cross_refs,
+            "suggested_questions": suggested_questions,
         }
 
     def _format_verses(self, verses: list[Verse], language: str) -> str:
@@ -88,6 +94,22 @@ class RAGPipeline:
                     f"    Themes: {', '.join(v.themes)}"
                 )
         return "\n\n".join(lines)
+
+    async def _generate_followups(self, question: str, answer: str, language: str) -> list[str]:
+        try:
+            lang = "Kannada" if language == "kn" else "English"
+            response = await self.openai.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "user", "content": f"Question: {question}\n\nAnswer summary: {answer[:500]}\n\nLanguage: {lang}\n\n{FOLLOWUP_PROMPT}"},
+                ],
+                temperature=0.7,
+                max_tokens=150,
+            )
+            content = response.choices[0].message.content or "[]"
+            return json.loads(content)
+        except Exception:
+            return []
 
     def _extract_cross_references(self, answer: str) -> list[dict]:
         traditions = [

@@ -72,7 +72,7 @@ async def check_moderation(text: str) -> None:
     if result.flagged:
         raise HTTPException(
             status_code=400,
-            detail="Your question was flagged by our content filter. Please rephrase and try again."
+            detail="We weren't able to process that question. Please try again."
         )
 
 

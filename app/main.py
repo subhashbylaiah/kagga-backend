@@ -19,7 +19,7 @@ limiter = Limiter(key_func=get_remote_address)
 class AskRequest(BaseModel):
     question: str = Field(..., min_length=1, max_length=2000)
     language: str = Field(default="en", pattern="^(kn|en)$")
-    top_k: int = Field(default=5, ge=1, le=20)
+    top_k: int = Field(default=3, ge=1, le=20)
 
 
 class AskResponse(BaseModel):

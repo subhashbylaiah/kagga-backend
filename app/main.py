@@ -81,6 +81,17 @@ async def health():
     return {"status": "ok"}
 
 
+@app.get("/suggestions")
+async def suggestions():
+    return [
+        "How do I deal with uncertainty?",
+        "What does Kagga say about grief?",
+        "How to find meaning in suffering?",
+        "What is the purpose of life according to Kagga?",
+        "How does Kagga view the nature of God?",
+    ]
+
+
 @app.post("/ask", response_model=AskResponse)
 @limiter.limit("5/minute")
 async def ask(request: Request, body: AskRequest):

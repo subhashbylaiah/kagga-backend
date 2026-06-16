@@ -1,5 +1,5 @@
 from qdrant_client import QdrantClient
-from qdrant_client.models import Filter, FieldCondition, MatchAny, SearchParams
+from qdrant_client.models import Filter, FieldCondition, MatchAny, MatchValue, SearchParams
 from openai import AsyncOpenAI
 from typing import Optional
 from app.models import Verse, SearchResult
@@ -53,6 +53,32 @@ class VectorSearch:
             )
             for hit in hits
         ]
+
+    async def get_by_verse_number(self, verse_number: int) -> Optional[Verse]:
+        results, _ = self.client.scroll(
+            collection_name=self.collection_name,
+            scroll_filter=Filter(
+                must=[
+                    FieldCondition(
+                        key="verse_number",
+                        match=MatchValue(value=verse_number),
+                    )
+                ]
+            ),
+            limit=1,
+            with_payload=True,
+        )
+        if not results:
+            return None
+        payload = results[0].payload
+        return Verse(
+            verse_number=payload["verse_number"],
+            kannada_text=payload["kannada_text"],
+            transliteration=payload["transliteration"],
+            english_translation=payload["english_translation"],
+            meaning=payload["meaning"],
+            themes=payload.get("themes", []),
+        )
 
     async def _embed(self, text: str) -> list[float]:
         response = await self.openai.embeddings.create(

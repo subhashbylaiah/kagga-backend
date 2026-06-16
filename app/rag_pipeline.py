@@ -3,6 +3,7 @@ from app.vector_search import VectorSearch
 from app.models import Verse
 from typing import Optional
 import json
+import re
 
 
 SYSTEM_PROMPT = """You are a wise philosophical guide deeply versed in Mankutimmana Kagga (DVG's 945 verses) and world philosophical traditions.
@@ -18,10 +19,6 @@ Given a user's question and relevant Kagga verses, synthesize a comprehensive an
 Be profound but accessible. No fluff. No disclaimers.
 
 On scope: Kagga speaks to the full range of human experience — grief, joy, work, relationships, doubt, nature, mortality, purpose, and everyday struggles. Accept any question where the user is seeking meaning, reflection, or wisdom, even if framed informally (e.g. "it's a gloomy day, inspire me" is a perfectly valid question). Only decline if the request has nothing to do with human experience or wisdom — for example, requests to write code, answer factual trivia, or perform tasks unrelated to philosophical reflection. When declining, do so warmly and invite the user to ask something Kagga can speak to."""
-
-FOLLOWUP_PROMPT = """Based on this Kagga answer, suggest 3 short follow-up questions the user might naturally want to ask next.
-Return only a JSON array of 3 strings, nothing else. Each question should be concise (under 10 words).
-Example: ["What does Kagga say about grief?", "How to practice detachment daily?", "Tell me more about verse 42"]"""
 
 FOLLOWUP_PROMPT = """Based on this Kagga answer, suggest 3 short follow-up questions the user might naturally want to ask next.
 Return only a JSON array of 3 strings, nothing else. Each question should be concise (under 10 words).
@@ -47,9 +44,28 @@ class RAGPipeline:
         self.openai = AsyncOpenAI(api_key=openai_key)
         self.model = model
 
+    def _extract_verse_number(self, question: str) -> Optional[int]:
+        patterns = [
+            r'(?:verse|kagga|ಕಗ್ಗ)\s*#?\s*(\d+)',
+            r'#(\d+)',
+            r'\bno\.?\s*(\d+)\b',
+        ]
+        for pattern in patterns:
+            match = re.search(pattern, question, re.IGNORECASE)
+            if match:
+                n = int(match.group(1))
+                if 1 <= n <= 945:
+                    return n
+        return None
+
     async def ask(self, question: str, language: str = "en", top_k: int = 5) -> dict:
-        search_results = await self.vector_search.search(query=question, top_k=top_k)
-        verses = [r.verse for r in search_results]
+        verse_number = self._extract_verse_number(question)
+        if verse_number:
+            verse = await self.vector_search.get_by_verse_number(verse_number)
+            verses = [verse] if verse else []
+        else:
+            search_results = await self.vector_search.search(query=question, top_k=top_k)
+            verses = [r.verse for r in search_results]
 
         verses_text = self._format_verses(verses, language)
         user_prompt = USER_PROMPT_TEMPLATE.format(

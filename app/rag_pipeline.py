@@ -90,10 +90,11 @@ class RAGPipeline:
 
         cross_refs = self._extract_cross_references(answer)
         suggested_questions = await self._generate_followups(question, answer, language)
+        cited_verses = self._filter_cited_verses(answer, verses)
 
         return {
             "answer": answer,
-            "citations": [v.model_dump() for v in verses],
+            "citations": [v.model_dump() for v in cited_verses],
             "cross_references": cross_refs,
             "suggested_questions": suggested_questions,
         }
@@ -134,6 +135,15 @@ class RAGPipeline:
             return json.loads(content)
         except Exception:
             return []
+
+    def _filter_cited_verses(self, answer: str, verses: list[Verse]) -> list[Verse]:
+        retrieved_numbers = {v.verse_number for v in verses}
+        cited_numbers = {
+            int(m) for m in re.findall(r'\[(\d+)\]', answer)
+            if int(m) in retrieved_numbers
+        }
+        cited = [v for v in verses if v.verse_number in cited_numbers]
+        return cited if cited else verses[:1]
 
     def _extract_cross_references(self, answer: str) -> list[dict]:
         traditions = [

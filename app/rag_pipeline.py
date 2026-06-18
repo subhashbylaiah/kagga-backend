@@ -143,7 +143,7 @@ class RAGPipeline:
             if int(m) in retrieved_numbers
         }
         cited = [v for v in verses if v.verse_number in cited_numbers]
-        return cited if cited else verses[:1]
+        return cited if cited else verses
 
     def _extract_cross_references(self, answer: str) -> list[dict]:
         traditions = [

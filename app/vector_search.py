@@ -1,5 +1,5 @@
 from qdrant_client import QdrantClient
-from qdrant_client.models import Filter, FieldCondition, MatchAny, MatchValue, SearchParams
+from qdrant_client.models import Filter, FieldCondition, MatchAny, MatchValue, SearchParams, NamedVector
 from openai import AsyncOpenAI
 from typing import Optional
 from app.models import Verse, SearchResult
@@ -14,10 +14,12 @@ class VectorSearch:
     async def search(
         self,
         query: str,
+        language: str = "en",
         themes: Optional[list[str]] = None,
         top_k: int = 10,
     ) -> list[SearchResult]:
         query_vector = await self._embed(query)
+        vector_name = "kannada" if language == "kn" else "english"
 
         qdrant_filter = None
         if themes:
@@ -32,7 +34,7 @@ class VectorSearch:
 
         hits = self.client.search(
             collection_name=self.collection_name,
-            query_vector=query_vector,
+            query_vector=NamedVector(name=vector_name, vector=query_vector),
             query_filter=qdrant_filter,
             limit=top_k,
             search_params=SearchParams(hnsw_ef=128),

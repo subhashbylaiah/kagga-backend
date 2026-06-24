@@ -32,7 +32,6 @@ async def embed_batch(texts: list[str]) -> list[list[float]]:
 def load_verses() -> list[dict]:
     if not DATA_PATH.exists():
         print(f"ERROR: Data file not found at {DATA_PATH}")
-        print("Expected format: data/kaggas.json with array of verses")
         sys.exit(1)
     with open(DATA_PATH) as f:
         data = json.load(f)
@@ -49,9 +48,12 @@ def create_collection():
 
     client.create_collection(
         collection_name=COLLECTION_NAME,
-        vectors_config=VectorParams(size=1536, distance=Distance.COSINE),
+        vectors_config={
+            "english": VectorParams(size=1536, distance=Distance.COSINE),
+            "kannada": VectorParams(size=1536, distance=Distance.COSINE),
+        },
     )
-    print(f"Created collection '{COLLECTION_NAME}'")
+    print(f"Created collection '{COLLECTION_NAME}' with named vectors")
 
 
 async def main():
@@ -63,17 +65,27 @@ async def main():
 
     for i in tqdm(range(0, len(verses), batch_size), desc="Embedding batches"):
         batch = verses[i:i+batch_size]
-        texts = [
-            f"{v['kannada_text']}\n{v['transliteration']}\n{v['english_translation']}\n{v['meaning']}"
+
+        english_texts = [
+            f"{v['english_translation']}\n{v['meaning']}"
             for v in batch
         ]
-        vectors = await embed_batch(texts)
+        kannada_texts = [
+            f"{v['kannada_text']}\n{v['transliteration']}"
+            for v in batch
+        ]
 
-        for v, vector in zip(batch, vectors):
+        english_vectors = await embed_batch(english_texts)
+        kannada_vectors = await embed_batch(kannada_texts)
+
+        for v, en_vec, kn_vec in zip(batch, english_vectors, kannada_vectors):
             points.append(
                 PointStruct(
                     id=v["id"],
-                    vector=vector,
+                    vector={
+                        "english": en_vec,
+                        "kannada": kn_vec,
+                    },
                     payload={
                         "verse_number": v["id"],
                         "kannada_text": v["kannada_text"],

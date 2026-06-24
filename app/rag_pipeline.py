@@ -66,7 +66,7 @@ class RAGPipeline:
             verse = await self.vector_search.get_by_verse_number(verse_number)
             verses = [verse] if verse else []
         else:
-            search_results = await self.vector_search.search(query=question, top_k=top_k)
+            search_results = await self.vector_search.search(query=question, language=language, top_k=top_k)
             verses = [r.verse for r in search_results]
 
         verses_text = self._format_verses(verses, language)

@@ -76,6 +76,31 @@ async def check_moderation(text: str) -> None:
         )
 
 
+async def check_topic(text: str) -> None:
+    response = await openai_client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+                "role": "user",
+                "content": (
+                    "Does this question relate to human experience, philosophy, wisdom, emotions, "
+                    "relationships, meaning, mortality, spirituality, or everyday life struggles? "
+                    "Answer only YES or NO.\n\n"
+                    f"Question: {text}"
+                ),
+            }
+        ],
+        temperature=0,
+        max_tokens=5,
+    )
+    answer = (response.choices[0].message.content or "").strip().upper()
+    if answer != "YES":
+        raise HTTPException(
+            status_code=400,
+            detail="Kagga speaks to the human experience — grief, purpose, relationships, mortality, and meaning. Please ask something along those lines."
+        )
+
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
@@ -96,6 +121,7 @@ async def suggestions():
 @limiter.limit("5/minute")
 async def ask(request: Request, body: AskRequest):
     await check_moderation(body.question)
+    await check_topic(body.question)
     try:
         result = await rag_pipeline.ask(
             question=body.question,

@@ -83,9 +83,12 @@ async def check_topic(text: str) -> None:
             {
                 "role": "user",
                 "content": (
-                    "Does this question relate to human experience, philosophy, wisdom, emotions, "
-                    "relationships, meaning, mortality, spirituality, or everyday life struggles? "
-                    "Answer only YES or NO.\n\n"
+                    "Is this a question where a person is seeking wisdom, meaning, coping strategies, "
+                    "emotional guidance, or philosophical reflection — even if framed in worldly terms "
+                    "like work, money, relationships, or daily life? "
+                    "Answer YES if there is any human experience or emotional angle. "
+                    "Answer NO only if it is purely technical, factual trivia, a coding task, or has "
+                    "no connection to human feelings or life experience whatsoever.\n\n"
                     f"Question: {text}"
                 ),
             }

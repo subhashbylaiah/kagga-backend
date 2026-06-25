@@ -126,7 +126,7 @@ class RAGPipeline:
             response = await self.openai.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "user", "content": f"Question: {question}\n\nAnswer summary: {answer[:500]}\n\nLanguage: {lang}\n\n{FOLLOWUP_PROMPT}"},
+                    {"role": "user", "content": f"Question: {question}\n\nAnswer summary: {answer[:500]}\n\n{FOLLOWUP_PROMPT}\n\nIMPORTANT: Write all 3 questions in {lang}."},
                 ],
                 temperature=0.7,
                 max_tokens=150,

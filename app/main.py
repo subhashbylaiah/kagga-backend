@@ -120,6 +120,34 @@ async def suggestions():
     ]
 
 
+@app.get("/facts")
+async def facts():
+    return [
+        "DVG never completed formal higher education — he taught himself Sanskrit and English, and went on to write one of Kannada literature's greatest works.",
+        "Mankutimmana Kagga was published in 1943, when DVG was 56 years old — the result of decades of quiet observation.",
+        "Mankutimma is not a real person — DVG was talking to himself, questioning his own understanding of life.",
+        "The word 'Kagga' loosely means 'ramblings' — DVG deliberately chose a humble title for a profound work.",
+        "Each verse ends with 'Mankutimma' — meaning 'you fool' — DVG's gentle reminder to himself to stay humble.",
+        "Mankutimmana Kagga has been translated into English, Hindi, and Sanskrit.",
+        "DVG was a journalist before he was a poet — he ran Kannada and English newspapers in the early 1900s.",
+        "DVG lived through two World Wars and India's independence — all of which shaped Kagga's themes of uncertainty and impermanence.",
+        "DVG received the Padma Bhushan from the Government of India in 1974, just one year before his death at age 88.",
+        "Mankutimmana Kagga is still taught in Karnataka schools and colleges, decades after it was written.",
+        "DVG wrote a memoir called Jnapaka Chitrashale — vivid portraits of people and life in old Mysore, considered a masterpiece of Kannada prose.",
+        "DVG founded the Gokhale Institute of Public Affairs in Bengaluru in 1945 as a free, open space for civic dialogue — anyone, regardless of status, was welcome.",
+        "When Karnataka honored DVG with ₹90,000 in 1970, he donated the entire sum to the Gokhale Institute rather than keep a single rupee for himself.",
+        "DVG profiled both the famous and the ordinary in his biographical works — he believed every life had equal dignity and deserved to be remembered.",
+        "DVG translated Shakespeare's Macbeth into Kannada — he believed great literature had no borders.",
+        "DVG also wrote children's literature, wanting wisdom to reach the youngest readers too.",
+        "DVG presided over the 18th Kannada Sahitya Sammelana in 1932 — one of the highest honors in Kannada literary culture.",
+        "India Post issued a commemorative stamp in DVG's honor in 1988, thirteen years after his death.",
+        "DVG's complete works were compiled into eleven volumes and are still published in e-book formats today by the Gokhale Institute.",
+        "DVG wrote the first Kannada-language book on political science in 1952, drawing on both Western scholarship and Indian philosophy.",
+        "DVG launched multiple newspapers between 1906 and 1921, including an English magazine supported by Diwan Visvesvaraya.",
+        "DVG lived to 88, passing away on October 7, 1975 — having witnessed a century of change while remaining rooted in timeless wisdom.",
+    ]
+
+
 @app.post("/ask", response_model=AskResponse)
 @limiter.limit("5/minute")
 async def ask(request: Request, body: AskRequest):

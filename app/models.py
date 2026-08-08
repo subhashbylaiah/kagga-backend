@@ -20,6 +20,8 @@ class TopicNode(BaseModel):
     id: str
     label: str
     description: str = ""
+    label_kn: str = ""
+    description_kn: str = ""
     verse_count: int
     children: Optional[list["TopicNode"]] = None
     verse_numbers: Optional[list[int]] = None

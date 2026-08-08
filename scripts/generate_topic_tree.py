@@ -106,12 +106,18 @@ def representative_texts(embeddings: np.ndarray, verses: list[dict], indices: li
 
 
 LABEL_PROMPT = """These are groups of verses from Mankutimmana Kagga, a Kannada philosophical
-text. For each group, give a short label (max 3 words, Title Case, no punctuation) and a
-one-sentence description capturing what's distinctive about that group specifically,
-relative to the other groups shown. Labels must be mutually distinct from each other.
+text. For each group, give:
+- label: a short English label (max 3 words, Title Case, no punctuation)
+- description: a one-sentence English description capturing what's distinctive about that
+  group specifically, relative to the other groups shown
+- label_kn: a natural, idiomatic Kannada equivalent of the label (not a literal
+  transliteration — write it the way a Kannada speaker would actually name this theme)
+- description_kn: a natural Kannada equivalent of the description
+
+Labels (in both languages) must be mutually distinct from each other.
 {parent_constraint}
 
-Respond as JSON: {{"labels": [{{"index": 0, "label": "...", "description": "..."}}, ...]}}
+Respond as JSON: {{"labels": [{{"index": 0, "label": "...", "description": "...", "label_kn": "...", "description_kn": "..."}}, ...]}}
 
 {groups}"""
 
@@ -124,15 +130,15 @@ async def label_children(embeddings: np.ndarray, verses: list[dict], children: l
     )
     parent_constraint = (
         f'These groups are all subdivisions of a broader category already labeled '
-        f'"{parent_label}". Do not reuse "{parent_label}" as a label for any group below — '
-        f"each child needs a label distinct from its own parent's."
+        f'"{parent_label}". Do not reuse "{parent_label}" (in either language) as a label '
+        f"for any group below — each child needs a label distinct from its own parent's."
         if parent_label else ""
     )
     resp = await openai.chat.completions.create(
         model="gpt-4o",
         messages=[{"role": "user", "content": LABEL_PROMPT.format(groups=groups_text, parent_constraint=parent_constraint)}],
         temperature=0.3,
-        max_tokens=1000,
+        max_tokens=1500,
         response_format={"type": "json_object"},
     )
     raw = resp.choices[0].message.content or "{}"
@@ -142,6 +148,8 @@ async def label_children(embeddings: np.ndarray, verses: list[dict], children: l
         entry = by_index.get(i, {})
         child["label"] = entry.get("label", f"Topic {child['id']}")
         child["description"] = entry.get("description", "")
+        child["label_kn"] = entry.get("label_kn", "")
+        child["description_kn"] = entry.get("description_kn", "")
 
 
 async def label_tree(embeddings: np.ndarray, verses: list[dict], root: dict) -> None:
@@ -168,6 +176,8 @@ def serialize(node: dict, verses: list[dict]) -> dict:
         "id": node["id"],
         "label": node.get("label", "All Topics"),
         "description": node.get("description", ""),
+        "label_kn": node.get("label_kn", "ಎಲ್ಲಾ ವಿಷಯಗಳು"),
+        "description_kn": node.get("description_kn", ""),
         "verse_count": len(node["verse_indices"]),
     }
     if node["children"]:
@@ -218,6 +228,7 @@ def print_sample_leaves(tree: dict, verses: list[dict], n: int = 10) -> None:
     for path, leaf in leaves[:n]:
         print(f"\n{' > '.join(path)}  ({leaf['verse_count']} verses)")
         print(f"  {leaf['description']}")
+        print(f"  KN: {leaf['label_kn']} — {leaf['description_kn']}")
         for num in leaf["verse_numbers"][:3]:
             print(f"  [{num}] {by_id[num]['english_translation'][:100]}")
 

@@ -1,7 +1,7 @@
 from openai import AsyncOpenAI
 from app.vector_search import VectorSearch
 from app.models import Verse
-from typing import Optional
+from app.verse_utils import extract_verse_number
 import json
 import re
 
@@ -46,22 +46,8 @@ class RAGPipeline:
         self.openai = AsyncOpenAI(api_key=openai_key)
         self.model = model
 
-    def _extract_verse_number(self, question: str) -> Optional[int]:
-        patterns = [
-            r'(?:verse|kagga|ಕಗ್ಗ)\s*#?\s*(\d+)',
-            r'#(\d+)',
-            r'\bno\.?\s*(\d+)\b',
-        ]
-        for pattern in patterns:
-            match = re.search(pattern, question, re.IGNORECASE)
-            if match:
-                n = int(match.group(1))
-                if 1 <= n <= 945:
-                    return n
-        return None
-
     async def ask(self, question: str, language: str = "en", top_k: int = 5) -> dict:
-        verse_number = self._extract_verse_number(question)
+        verse_number = extract_verse_number(question)
         if verse_number:
             verse = await self.vector_search.get_by_verse_number(verse_number)
             verses = [verse] if verse else []

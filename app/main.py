@@ -14,6 +14,7 @@ import os
 from app.vector_search import VectorSearch
 from app.rag_pipeline import RAGPipeline
 from app.models import Verse, SearchResult, TopicNode
+from app.verse_utils import extract_verse_number
 
 limiter = Limiter(key_func=get_remote_address)
 
@@ -219,7 +220,12 @@ async def verses_batch(body: VerseBatchRequest):
 @limiter.limit("5/minute")
 async def ask(request: Request, body: AskRequest):
     await check_moderation(body.question)
-    await check_topic(body.question)
+    # A question naming a specific Kagga verse is unambiguously in-scope
+    # regardless of phrasing or language — skip the topic-relevance check,
+    # which can misjudge terse "explain verse N" requests as off-topic
+    # (observed especially for Kannada phrasing).
+    if extract_verse_number(body.question) is None:
+        await check_topic(body.question)
     try:
         result = await rag_pipeline.ask(
             question=body.question,

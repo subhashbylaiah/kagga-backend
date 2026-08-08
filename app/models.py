@@ -14,3 +14,15 @@ class Verse(BaseModel):
 class SearchResult(BaseModel):
     verse: Verse
     score: float = Field(..., ge=0.0, le=1.0)
+
+
+class TopicNode(BaseModel):
+    id: str
+    label: str
+    description: str = ""
+    verse_count: int
+    children: Optional[list["TopicNode"]] = None
+    verse_numbers: Optional[list[int]] = None
+
+
+TopicNode.model_rebuild()

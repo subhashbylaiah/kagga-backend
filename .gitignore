@@ -23,6 +23,11 @@ coverage.xml
 venv/
 env/
 ENV/
+.venv-topic-tree/
+.venv-backend/
+
+# One-off script caches
+scripts/.cache/
 
 # IDE
 .vscode/
@@ -39,10 +44,11 @@ Thumbs.db
 .env.local
 
 # Data
-data/
+data/*
 *.json
 debug_kaggas.json
 !data/kaggas.json
+!data/topic_tree.json
 
 # Docker
 .docker/

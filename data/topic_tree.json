@@ -1,0 +1,1905 @@
+{
+  "id": "root",
+  "label": "All Topics",
+  "description": "",
+  "verse_count": 945,
+  "children": [
+    {
+      "id": "t0",
+      "label": "Inner Wisdom",
+      "description": "This group emphasizes the journey of gaining wisdom through life experiences and introspection to realize universal truth.",
+      "verse_count": 90,
+      "children": [
+        {
+          "id": "t0-0",
+          "label": "Perception of Reality",
+          "description": "This group explores the nature of reality and perception, emphasizing the subjective nature of experiences and the existence of smaller truths within a larger ultimate truth.",
+          "verse_count": 4,
+          "verse_numbers": [
+            221,
+            394,
+            893,
+            897
+          ]
+        },
+        {
+          "id": "t0-1",
+          "label": "Path to Truth",
+          "description": "This group focuses on the journey towards realizing universal truth, highlighting the necessity of a pure mind, diverse experiences, and inward reflection.",
+          "verse_count": 20,
+          "children": [
+            {
+              "id": "t0-1-0",
+              "label": "Mind and Intellect",
+              "description": "This group focuses on the interplay between the mind and intellect, emphasizing the limitations of intellect without the guidance of a purified mind.",
+              "verse_count": 4,
+              "verse_numbers": [
+                65,
+                547,
+                554,
+                692
+              ]
+            },
+            {
+              "id": "t0-1-1",
+              "label": "Purity and Realization",
+              "description": "This group highlights the necessity of purifying the mind and experiencing life to attain wisdom and realize universal truth.",
+              "verse_count": 16,
+              "verse_numbers": [
+                49,
+                125,
+                228,
+                331,
+                490,
+                530,
+                539,
+                558,
+                620,
+                739,
+                755,
+                800,
+                810,
+                899,
+                906,
+                918
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t0-2",
+          "label": "Subjective Truths",
+          "description": "This group discusses the varied and incomplete perceptions of truth, encouraging the acceptance of different perspectives and the pursuit of understanding despite limitations.",
+          "verse_count": 10,
+          "verse_numbers": [
+            45,
+            47,
+            48,
+            54,
+            55,
+            333,
+            393,
+            770,
+            797,
+            801
+          ]
+        },
+        {
+          "id": "t0-3",
+          "label": "Inner Happiness",
+          "description": "This group emphasizes the pursuit of true happiness through inward reflection and understanding the universal soul, contrasting it with fleeting worldly pleasures.",
+          "verse_count": 6,
+          "verse_numbers": [
+            663,
+            862,
+            887,
+            888,
+            889,
+            912
+          ]
+        },
+        {
+          "id": "t0-4",
+          "label": "Mind and Matter",
+          "description": "This group examines the distinction between the physical body and the intangible mind, highlighting the limitations of scientific measurement in understanding the essence of life.",
+          "verse_count": 9,
+          "verse_numbers": [
+            62,
+            102,
+            103,
+            113,
+            121,
+            194,
+            794,
+            895,
+            896
+          ]
+        },
+        {
+          "id": "t0-5",
+          "label": "Intellectual Pursuit",
+          "description": "This group underscores the importance of intellectual effort and the integration of ancient wisdom and personal experience in the quest for universal truth.",
+          "verse_count": 17,
+          "verse_numbers": [
+            50,
+            64,
+            98,
+            324,
+            492,
+            518,
+            521,
+            523,
+            527,
+            545,
+            552,
+            555,
+            556,
+            616,
+            774,
+            818,
+            936
+          ]
+        },
+        {
+          "id": "t0-6",
+          "label": "Universal Essence",
+          "description": "This group explores the omnipresence of the ultimate truth, found both within oneself and in the external world, and the interconnectedness of all existence.",
+          "verse_count": 22,
+          "children": [
+            {
+              "id": "t0-6-0",
+              "label": "Veiled Truth",
+              "description": "This group emphasizes the elusive nature of truth, hidden behind layers of deceit and partial knowledge, challenging us to seek deeper understanding.",
+              "verse_count": 6,
+              "verse_numbers": [
+                3,
+                31,
+                68,
+                479,
+                838,
+                939
+              ]
+            },
+            {
+              "id": "t0-6-1",
+              "label": "Universal Oneness",
+              "description": "This group highlights the omnipresence and unity of the ultimate truth, existing both within and beyond, and perceived through love and intellect.",
+              "verse_count": 16,
+              "verse_numbers": [
+                61,
+                100,
+                106,
+                142,
+                219,
+                320,
+                332,
+                395,
+                400,
+                458,
+                688,
+                693,
+                695,
+                851,
+                892,
+                894
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t0-7",
+          "label": "Knowledge Through Experience",
+          "description": "This group uses the metaphor of churning milk to describe how deep contemplation and life experiences lead to the realization of true knowledge.",
+          "verse_count": 2,
+          "verse_numbers": [
+            544,
+            615
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t1",
+      "label": "Life's Contradictions",
+      "description": "This group explores the contradictions and unpredictability of life, comparing it to a game influenced by divine and human actions.",
+      "verse_count": 108,
+      "children": [
+        {
+          "id": "t1-0",
+          "label": "Limited Perception",
+          "description": "This group emphasizes the limitations of human perception and understanding, highlighting the inability to see beyond immediate experiences and the past.",
+          "verse_count": 2,
+          "verse_numbers": [
+            44,
+            761
+          ]
+        },
+        {
+          "id": "t1-1",
+          "label": "Providence's Game",
+          "description": "This group explores the interplay of fate, human effort, and divine will, portraying life as a game orchestrated by Providence with unpredictable outcomes.",
+          "verse_count": 30,
+          "children": [
+            {
+              "id": "t1-1-0",
+              "label": "Human Nature Duality",
+              "description": "This group explores the duality and multifaceted nature of human beings, emphasizing the blend of contrasting qualities within each person.",
+              "verse_count": 3,
+              "verse_numbers": [
+                148,
+                205,
+                413
+              ]
+            },
+            {
+              "id": "t1-1-1",
+              "label": "Life's Cosmic Game",
+              "description": "This group delves into the metaphor of life as a game governed by providence, human effort, and fate, highlighting the interplay of cosmic forces in human existence.",
+              "verse_count": 27,
+              "verse_numbers": [
+                7,
+                67,
+                72,
+                73,
+                149,
+                156,
+                157,
+                160,
+                170,
+                185,
+                186,
+                199,
+                239,
+                242,
+                250,
+                267,
+                289,
+                305,
+                327,
+                329,
+                334,
+                336,
+                340,
+                365,
+                439,
+                804,
+                843
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t1-2",
+          "label": "Interconnected Actions",
+          "description": "This group discusses the interconnectedness of actions and consequences, illustrating how individual actions impact the broader web of life.",
+          "verse_count": 5,
+          "verse_numbers": [
+            341,
+            510,
+            840,
+            841,
+            842
+          ]
+        },
+        {
+          "id": "t1-3",
+          "label": "Cosmic Illusion",
+          "description": "This group delves into the idea of life as an illusion, questioning the nature of reality and the role of a hidden creator in the grand scheme of existence.",
+          "verse_count": 23,
+          "children": [
+            {
+              "id": "t1-3-0",
+              "label": "Universal Center",
+              "description": "This group of verses explores the concept of each individual being the center of their own universe, emphasizing the limitless potential and centrality of personal perspective.",
+              "verse_count": 17,
+              "verse_numbers": [
+                4,
+                42,
+                51,
+                56,
+                71,
+                83,
+                135,
+                136,
+                137,
+                138,
+                144,
+                190,
+                247,
+                254,
+                321,
+                441,
+                900
+              ]
+            },
+            {
+              "id": "t1-3-1",
+              "label": "Worldly Illusion",
+              "description": "These verses depict the world as an illusory and transient spectacle, urging detachment and recognition of its ephemeral nature.",
+              "verse_count": 6,
+              "verse_numbers": [
+                9,
+                22,
+                354,
+                390,
+                751,
+                791
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t1-4",
+          "label": "Unity in Diversity",
+          "description": "This group highlights the interconnectedness and unity among all living beings, emphasizing the shared experiences and collective growth within the world.",
+          "verse_count": 14,
+          "verse_numbers": [
+            27,
+            273,
+            348,
+            603,
+            617,
+            768,
+            795,
+            803,
+            807,
+            834,
+            884,
+            898,
+            914,
+            921
+          ]
+        },
+        {
+          "id": "t1-5",
+          "label": "Unpredictable Paths",
+          "description": "This group focuses on the unpredictability of life, comparing human experiences to the erratic and uncontrolled movements of birds and other creatures.",
+          "verse_count": 6,
+          "verse_numbers": [
+            590,
+            641,
+            691,
+            731,
+            732,
+            839
+          ]
+        },
+        {
+          "id": "t1-6",
+          "label": "Existential Restlessness",
+          "description": "This group expresses the anxiety and uncertainty about life and death, reflecting on the fading of old beliefs and the search for new understanding.",
+          "verse_count": 8,
+          "verse_numbers": [
+            11,
+            15,
+            16,
+            391,
+            481,
+            568,
+            837,
+            846
+          ]
+        },
+        {
+          "id": "t1-7",
+          "label": "Individual Uniqueness",
+          "description": "This group celebrates the uniqueness of individuals within the human race, acknowledging the diversity in character and qualities despite physical similarities.",
+          "verse_count": 13,
+          "verse_numbers": [
+            14,
+            134,
+            233,
+            236,
+            237,
+            238,
+            240,
+            246,
+            322,
+            337,
+            338,
+            406,
+            882
+          ]
+        },
+        {
+          "id": "t1-8",
+          "label": "Chaotic Existence",
+          "description": "This group questions the chaotic nature of the world, pondering the purpose and meaning of life amidst the commotion and contradictions of existence.",
+          "verse_count": 7,
+          "verse_numbers": [
+            10,
+            131,
+            234,
+            303,
+            309,
+            532,
+            666
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "label": "Divine Paradox",
+      "description": "This group questions the role of God in human suffering and the paradox of devotion in a world driven by intellect.",
+      "verse_count": 82,
+      "children": [
+        {
+          "id": "t2-0",
+          "label": "Worldly Worship",
+          "description": "This group questions the purpose and nature of worship and the perception of God in everyday life.",
+          "verse_count": 22,
+          "children": [
+            {
+              "id": "t2-0-0",
+              "label": "Questioning Divinity",
+              "description": "This group questions the nature and purpose of worship and the existence of gods, highlighting skepticism and the futility of certain religious practices.",
+              "verse_count": 14,
+              "verse_numbers": [
+                20,
+                24,
+                40,
+                59,
+                223,
+                368,
+                377,
+                424,
+                491,
+                500,
+                546,
+                684,
+                747,
+                777
+              ]
+            },
+            {
+              "id": "t2-0-1",
+              "label": "Transcendent Understanding",
+              "description": "This group emphasizes the perspective of a realized soul who transcends fear and worldly attachments, finding liberation in diverse experiences and seeing unity in all creation.",
+              "verse_count": 8,
+              "verse_numbers": [
+                660,
+                798,
+                802,
+                809,
+                831,
+                832,
+                922,
+                934
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2-1",
+          "label": "Faith Challenges",
+          "description": "This group explores the complexities and uncertainties of faith and the human struggle to align with divine will.",
+          "verse_count": 30,
+          "children": [
+            {
+              "id": "t2-1-0",
+              "label": "Divine Will Dilemmas",
+              "description": "This group explores the tension between human desires and divine will, questioning why God doesn't align human minds with divine intentions.",
+              "verse_count": 17,
+              "verse_numbers": [
+                17,
+                33,
+                34,
+                36,
+                41,
+                275,
+                369,
+                425,
+                502,
+                506,
+                515,
+                529,
+                776,
+                792,
+                799,
+                942,
+                943
+              ]
+            },
+            {
+              "id": "t2-1-1",
+              "label": "Belief Paradoxes",
+              "description": "This group examines the paradoxes of belief in God, highlighting the disconnect between faith and personal happiness or understanding.",
+              "verse_count": 13,
+              "verse_numbers": [
+                107,
+                460,
+                485,
+                493,
+                514,
+                528,
+                538,
+                638,
+                752,
+                753,
+                917,
+                920,
+                944
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2-2",
+          "label": "Grace Appreciation",
+          "description": "This group focuses on the concept of divine grace and its significance during times of trouble.",
+          "verse_count": 2,
+          "verse_numbers": [
+            504,
+            505
+          ]
+        },
+        {
+          "id": "t2-3",
+          "label": "Divine Balance",
+          "description": "This group highlights the balance between attachment and detachment as exemplified by deities like Shiva.",
+          "verse_count": 4,
+          "verse_numbers": [
+            95,
+            613,
+            614,
+            764
+          ]
+        },
+        {
+          "id": "t2-4",
+          "label": "Universal Experience",
+          "description": "This group emphasizes the diverse and limitless ways people experience and perceive God.",
+          "verse_count": 6,
+          "verse_numbers": [
+            60,
+            63,
+            351,
+            516,
+            517,
+            772
+          ]
+        },
+        {
+          "id": "t2-5",
+          "label": "Karmic Understanding",
+          "description": "This group discusses the importance of understanding karma and its influence on one's life and spiritual journey.",
+          "verse_count": 9,
+          "verse_numbers": [
+            499,
+            507,
+            508,
+            509,
+            622,
+            628,
+            672,
+            702,
+            931
+          ]
+        },
+        {
+          "id": "t2-6",
+          "label": "True Devotion",
+          "description": "This group examines the nature of true devotion and the importance of surrendering to divine will.",
+          "verse_count": 9,
+          "verse_numbers": [
+            484,
+            494,
+            501,
+            533,
+            581,
+            584,
+            708,
+            765,
+            766
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "label": "Time's Flow",
+      "description": "This group reflects on the relentless flow of time and its impact on human progress and constructs.",
+      "verse_count": 77,
+      "children": [
+        {
+          "id": "t3-0",
+          "label": "Cycle of Life",
+          "description": "This group focuses on the cyclical nature of life, emphasizing the inevitability of decline and renewal.",
+          "verse_count": 7,
+          "verse_numbers": [
+            235,
+            293,
+            304,
+            308,
+            316,
+            474,
+            593
+          ]
+        },
+        {
+          "id": "t3-1",
+          "label": "Relentless Waves",
+          "description": "This group highlights the relentless and continuous nature of cosmic and life forces, akin to the unending waves of the sea.",
+          "verse_count": 13,
+          "verse_numbers": [
+            18,
+            90,
+            92,
+            101,
+            128,
+            225,
+            259,
+            431,
+            694,
+            725,
+            890,
+            891,
+            901
+          ]
+        },
+        {
+          "id": "t3-2",
+          "label": "Eternal Flow",
+          "description": "This group discusses the perpetual flow of time and its effects on human constructs and progress.",
+          "verse_count": 31,
+          "children": [
+            {
+              "id": "t3-2-0",
+              "label": "Human Qualities Flow",
+              "description": "This group emphasizes the continuous and transformative flow of human qualities and traditions, akin to a river's journey.",
+              "verse_count": 5,
+              "verse_numbers": [
+                110,
+                408,
+                412,
+                535,
+                876
+              ]
+            },
+            {
+              "id": "t3-2-1",
+              "label": "Time's Relentless Progress",
+              "description": "This group highlights the unstoppable and ever-changing nature of time, impacting human progress and societal constructs.",
+              "verse_count": 20,
+              "verse_numbers": [
+                25,
+                91,
+                104,
+                167,
+                212,
+                227,
+                229,
+                230,
+                231,
+                361,
+                362,
+                363,
+                404,
+                410,
+                411,
+                635,
+                683,
+                743,
+                852,
+                861
+              ]
+            },
+            {
+              "id": "t3-2-2",
+              "label": "Nature's Influence",
+              "description": "This group focuses on the interplay between nature's forces and human efforts to shape and adapt to the world.",
+              "verse_count": 6,
+              "verse_numbers": [
+                232,
+                655,
+                859,
+                860,
+                875,
+                877
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3-3",
+          "label": "Life's Essence",
+          "description": "This group explores the essential energies that sustain life, emphasizing the interplay between cosmic and earthly forces.",
+          "verse_count": 8,
+          "verse_numbers": [
+            19,
+            43,
+            108,
+            109,
+            118,
+            119,
+            129,
+            155
+          ]
+        },
+        {
+          "id": "t3-4",
+          "label": "Old in New",
+          "description": "This group reflects on the presence of ancient elements within new creations, illustrating continuity through change.",
+          "verse_count": 10,
+          "verse_numbers": [
+            70,
+            130,
+            132,
+            141,
+            164,
+            165,
+            226,
+            519,
+            540,
+            604
+          ]
+        },
+        {
+          "id": "t3-5",
+          "label": "Endless Cycles",
+          "description": "This group addresses the endless cycles of debt, causation, and rebirth, highlighting the persistent renewal of the world.",
+          "verse_count": 8,
+          "verse_numbers": [
+            153,
+            163,
+            166,
+            182,
+            312,
+            339,
+            402,
+            674
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "label": "Endurance and Duty",
+      "description": "This group focuses on enduring life's challenges and fulfilling one's duties while keeping the universal truth in mind.",
+      "verse_count": 192,
+      "children": [
+        {
+          "id": "t4-0",
+          "label": "Philosophical Inquiry",
+          "description": "This group emphasizes the importance of seeking answers and understanding the limitations of human efforts against the backdrop of philosophical figures and ideas.",
+          "verse_count": 3,
+          "verse_numbers": [
+            198,
+            856,
+            869
+          ]
+        },
+        {
+          "id": "t4-1",
+          "label": "Acceptance of Fate",
+          "description": "This group focuses on the acceptance of fate and the understanding that many aspects of life are beyond human control.",
+          "verse_count": 32,
+          "children": [
+            {
+              "id": "t4-1-0",
+              "label": "Unpredictable Providence",
+              "description": "This group emphasizes the unpredictable nature of fate and how it can bring unexpected changes beyond one's control.",
+              "verse_count": 15,
+              "verse_numbers": [
+                248,
+                307,
+                357,
+                360,
+                366,
+                420,
+                482,
+                550,
+                633,
+                673,
+                758,
+                783,
+                784,
+                909,
+                941
+              ]
+            },
+            {
+              "id": "t4-1-1",
+              "label": "Invisible Forces",
+              "description": "This group highlights the hidden forces that influence life and the importance of understanding these forces to find happiness and success.",
+              "verse_count": 6,
+              "verse_numbers": [
+                330,
+                355,
+                503,
+                738,
+                749,
+                820
+              ]
+            },
+            {
+              "id": "t4-1-2",
+              "label": "Life's Impermanence",
+              "description": "This group focuses on the transient nature of life and the inevitability of its end, encouraging acceptance of life's fleeting moments.",
+              "verse_count": 11,
+              "verse_numbers": [
+                150,
+                353,
+                600,
+                669,
+                681,
+                682,
+                685,
+                750,
+                760,
+                913,
+                945
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t4-2",
+          "label": "Harmony and Sacrifice",
+          "description": "This group highlights the importance of living harmoniously with others and the value of self-sacrifice for the greater good.",
+          "verse_count": 6,
+          "verse_numbers": [
+            270,
+            299,
+            806,
+            844,
+            908,
+            923
+          ]
+        },
+        {
+          "id": "t4-3",
+          "label": "Persistence and Hard Work",
+          "description": "This group stresses the necessity of persistent effort and resilience in the face of challenges.",
+          "verse_count": 30,
+          "children": [
+            {
+              "id": "t4-3-0",
+              "label": "Steadfast Effort",
+              "description": "This group emphasizes maintaining steady effort and accepting limitations without anxiety or self-pity.",
+              "verse_count": 16,
+              "verse_numbers": [
+                158,
+                292,
+                302,
+                346,
+                349,
+                358,
+                475,
+                483,
+                576,
+                578,
+                601,
+                668,
+                790,
+                822,
+                833,
+                857
+              ]
+            },
+            {
+              "id": "t4-3-1",
+              "label": "Resilient Spirit",
+              "description": "This group focuses on the importance of resilience and courage in the face of repeated failures and setbacks.",
+              "verse_count": 14,
+              "verse_numbers": [
+                269,
+                572,
+                573,
+                574,
+                588,
+                589,
+                595,
+                596,
+                636,
+                699,
+                740,
+                762,
+                824,
+                867
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t4-4",
+          "label": "Warrior's Duty",
+          "description": "This group draws parallels between life and a soldier's duty, emphasizing courage and the irrelevance of personal gain in the pursuit of one's duty.",
+          "verse_count": 5,
+          "verse_numbers": [
+            624,
+            696,
+            734,
+            735,
+            911
+          ]
+        },
+        {
+          "id": "t4-5",
+          "label": "Detached Engagement",
+          "description": "This group advocates for full engagement in worldly activities while maintaining inner detachment.",
+          "verse_count": 8,
+          "verse_numbers": [
+            255,
+            625,
+            701,
+            712,
+            728,
+            767,
+            773,
+            808
+          ]
+        },
+        {
+          "id": "t4-6",
+          "label": "Balance for Happiness",
+          "description": "This group discusses the need for balance and detachment to achieve happiness in life.",
+          "verse_count": 14,
+          "verse_numbers": [
+            575,
+            639,
+            703,
+            723,
+            724,
+            741,
+            742,
+            759,
+            778,
+            779,
+            782,
+            821,
+            825,
+            925
+          ]
+        },
+        {
+          "id": "t4-7",
+          "label": "Humility and Renunciation",
+          "description": "This group emphasizes humility and the renunciation of worldly attachments and desires.",
+          "verse_count": 12,
+          "verse_numbers": [
+            21,
+            619,
+            631,
+            640,
+            649,
+            654,
+            656,
+            671,
+            677,
+            719,
+            748,
+            871
+          ]
+        },
+        {
+          "id": "t4-8",
+          "label": "Worldly Actions",
+          "description": "This group underscores the importance of actions in this world and their impact on the afterlife.",
+          "verse_count": 13,
+          "verse_numbers": [
+            256,
+            257,
+            367,
+            398,
+            401,
+            524,
+            713,
+            727,
+            737,
+            827,
+            835,
+            847,
+            916
+          ]
+        },
+        {
+          "id": "t4-9",
+          "label": "Learning from Mistakes",
+          "description": "This group focuses on the inevitability of mistakes and the importance of learning and growing from them.",
+          "verse_count": 7,
+          "verse_numbers": [
+            171,
+            260,
+            345,
+            582,
+            698,
+            933,
+            940
+          ]
+        },
+        {
+          "id": "t4-10",
+          "label": "Dharma and Duty",
+          "description": "This group highlights the importance of adhering to dharma and fulfilling one's duties in life.",
+          "verse_count": 17,
+          "verse_numbers": [
+            264,
+            274,
+            583,
+            611,
+            612,
+            621,
+            623,
+            662,
+            704,
+            715,
+            729,
+            736,
+            757,
+            763,
+            813,
+            903,
+            904
+          ]
+        },
+        {
+          "id": "t4-11",
+          "label": "Facing Providence",
+          "description": "This group discusses the interplay between human effort and divine providence, emphasizing resilience.",
+          "verse_count": 8,
+          "verse_numbers": [
+            161,
+            512,
+            548,
+            549,
+            551,
+            579,
+            598,
+            599
+          ]
+        },
+        {
+          "id": "t4-12",
+          "label": "Embracing Life",
+          "description": "This group encourages embracing life with all its challenges and living it fully despite its difficulties.",
+          "verse_count": 21,
+          "children": [
+            {
+              "id": "t4-12-0",
+              "label": "Life's Challenges",
+              "description": "This group focuses on the inevitability of life's struggles and the necessity of facing them with resilience and perspective.",
+              "verse_count": 7,
+              "verse_numbers": [
+                249,
+                263,
+                591,
+                592,
+                594,
+                637,
+                676
+              ]
+            },
+            {
+              "id": "t4-12-1",
+              "label": "Acceptance and Struggle",
+              "description": "This group emphasizes accepting life's inherent difficulties and continuing to strive without resistance or complaint.",
+              "verse_count": 14,
+              "verse_numbers": [
+                258,
+                266,
+                271,
+                585,
+                586,
+                629,
+                643,
+                644,
+                653,
+                658,
+                686,
+                830,
+                849,
+                915
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t4-13",
+          "label": "Role and Responsibility",
+          "description": "This group focuses on fulfilling one's role and responsibilities with dedication and detachment.",
+          "verse_count": 5,
+          "verse_numbers": [
+            580,
+            706,
+            710,
+            814,
+            910
+          ]
+        },
+        {
+          "id": "t4-14",
+          "label": "Living in the Moment",
+          "description": "This group highlights the simplicity and spontaneity of living without long-term plans or expectations.",
+          "verse_count": 2,
+          "verse_numbers": [
+            642,
+            730
+          ]
+        },
+        {
+          "id": "t4-15",
+          "label": "Self-Reliance in Death",
+          "description": "This group emphasizes self-reliance and the importance of not being a burden to others at the end of life.",
+          "verse_count": 9,
+          "verse_numbers": [
+            689,
+            716,
+            717,
+            718,
+            926,
+            927,
+            928,
+            929,
+            930
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "label": "Karmic Consequences",
+      "description": "This group discusses the interplay of divine and demonic traits in humans and the consequences of past actions.",
+      "verse_count": 69,
+      "children": [
+        {
+          "id": "t5-0",
+          "label": "Inner Animal Instincts",
+          "description": "This group explores the hidden, animalistic instincts within humans that influence their behavior and relationships.",
+          "verse_count": 4,
+          "verse_numbers": [
+            195,
+            197,
+            202,
+            426
+          ]
+        },
+        {
+          "id": "t5-1",
+          "label": "Complexity Of Love",
+          "description": "This group delves into the dual nature of love, highlighting its potential to both bind and liberate individuals.",
+          "verse_count": 15,
+          "verse_numbers": [
+            174,
+            187,
+            245,
+            407,
+            414,
+            421,
+            427,
+            428,
+            429,
+            453,
+            461,
+            497,
+            606,
+            607,
+            678
+          ]
+        },
+        {
+          "id": "t5-2",
+          "label": "Desire's Influence",
+          "description": "This group examines how desire can cloud judgment and lead to significant consequences, drawing parallels with mythological figures.",
+          "verse_count": 16,
+          "verse_numbers": [
+            146,
+            147,
+            216,
+            283,
+            288,
+            306,
+            383,
+            416,
+            418,
+            541,
+            542,
+            608,
+            657,
+            707,
+            709,
+            863
+          ]
+        },
+        {
+          "id": "t5-3",
+          "label": "Fate And Karma",
+          "description": "This group discusses the unpredictable nature of fate and how past actions influence present and future experiences.",
+          "verse_count": 17,
+          "verse_numbers": [
+            152,
+            162,
+            168,
+            169,
+            179,
+            183,
+            284,
+            286,
+            317,
+            335,
+            356,
+            364,
+            387,
+            415,
+            513,
+            659,
+            726
+          ]
+        },
+        {
+          "id": "t5-4",
+          "label": "Dharma And Afterlife",
+          "description": "This group reflects on the journey of Yudhistira, emphasizing the trials faced even by the virtuous on their path to heaven.",
+          "verse_count": 2,
+          "verse_numbers": [
+            511,
+            690
+          ]
+        },
+        {
+          "id": "t5-5",
+          "label": "Deceptive Relationships",
+          "description": "This group highlights the hidden dangers in relationships, portraying friends and family as potential agents of one's downfall.",
+          "verse_count": 15,
+          "verse_numbers": [
+            12,
+            172,
+            173,
+            175,
+            176,
+            177,
+            178,
+            180,
+            181,
+            243,
+            279,
+            296,
+            570,
+            630,
+            648
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "label": "Creation's Illusion",
+      "description": "This group delves into the concept of Maya, the illusion created by the divine for its amusement and the nature of existence within it.",
+      "verse_count": 73,
+      "children": [
+        {
+          "id": "t6-0",
+          "label": "Creator's Paradox",
+          "description": "This group explores the paradoxical nature of the creator, who combines opposites and creates a world full of contradictions.",
+          "verse_count": 5,
+          "verse_numbers": [
+            26,
+            28,
+            311,
+            319,
+            417
+          ]
+        },
+        {
+          "id": "t6-1",
+          "label": "Cosmic Dance",
+          "description": "This group describes the world as a dance of the creator, emphasizing the interconnectedness of all beings and the illusion of separateness.",
+          "verse_count": 15,
+          "verse_numbers": [
+            1,
+            86,
+            88,
+            93,
+            96,
+            97,
+            111,
+            117,
+            126,
+            151,
+            531,
+            771,
+            793,
+            805,
+            850
+          ]
+        },
+        {
+          "id": "t6-2",
+          "label": "Creator's Enigma",
+          "description": "This group questions the intentions and methods of the creator, pondering the mysteries and diversity of the world.",
+          "verse_count": 16,
+          "verse_numbers": [
+            5,
+            6,
+            8,
+            30,
+            32,
+            35,
+            85,
+            94,
+            114,
+            115,
+            116,
+            159,
+            430,
+            486,
+            537,
+            711
+          ]
+        },
+        {
+          "id": "t6-3",
+          "label": "Hidden Creator",
+          "description": "This group focuses on the elusive nature of the creator, who remains hidden and enigmatic despite creating the world.",
+          "verse_count": 4,
+          "verse_numbers": [
+            37,
+            38,
+            39,
+            193
+          ]
+        },
+        {
+          "id": "t6-4",
+          "label": "Maya's Illusion",
+          "description": "This group discusses the concept of Maya, the illusion created by the creator to manifest the world and entertain himself.",
+          "verse_count": 21,
+          "children": [
+            {
+              "id": "t6-4-0",
+              "label": "Creator's Solitude",
+              "description": "This group focuses on the creator's desire to overcome loneliness by manifesting the illusion of the universe.",
+              "verse_count": 17,
+              "verse_numbers": [
+                66,
+                74,
+                76,
+                77,
+                81,
+                84,
+                127,
+                272,
+                313,
+                318,
+                323,
+                326,
+                405,
+                488,
+                602,
+                754,
+                932
+              ]
+            },
+            {
+              "id": "t6-4-1",
+              "label": "Playful Engagement",
+              "description": "This group highlights the playful and engrossing nature of human activities as metaphors for the creator's engagement with the world.",
+              "verse_count": 4,
+              "verse_numbers": [
+                78,
+                79,
+                80,
+                82
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t6-5",
+          "label": "Creation's Mystery",
+          "description": "This group delves into the mysterious and illusory aspects of creation, likening it to stories and games that conceal deeper truths.",
+          "verse_count": 12,
+          "verse_numbers": [
+            29,
+            75,
+            89,
+            133,
+            139,
+            145,
+            328,
+            487,
+            525,
+            836,
+            848,
+            919
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "label": "Human Desires",
+      "description": "This group examines the insatiable desires and restless nature of humans, and the pursuit of happiness in various forms.",
+      "verse_count": 134,
+      "children": [
+        {
+          "id": "t7-0",
+          "label": "Pursuit of Happiness",
+          "description": "This group focuses on the relentless pursuit of happiness and fulfillment through various means and the inherent restlessness that accompanies human desires.",
+          "verse_count": 27,
+          "children": [
+            {
+              "id": "t7-0-0",
+              "label": "Endless Desires",
+              "description": "This group explores the relentless pursuit of happiness through desires and actions, highlighting the constant human struggle for fulfillment.",
+              "verse_count": 25,
+              "verse_numbers": [
+                23,
+                124,
+                208,
+                209,
+                211,
+                215,
+                222,
+                224,
+                315,
+                344,
+                350,
+                371,
+                384,
+                480,
+                634,
+                645,
+                714,
+                786,
+                845,
+                854,
+                855,
+                858,
+                864,
+                872,
+                880
+              ]
+            },
+            {
+              "id": "t7-0-1",
+              "label": "Transient Anxieties",
+              "description": "This group focuses on the temporary nature of anxieties and how their eventual subsidence brings about happiness.",
+              "verse_count": 2,
+              "verse_numbers": [
+                785,
+                787
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t7-1",
+          "label": "Moral Discipline",
+          "description": "This group emphasizes the importance of moral discipline and inner conscience in achieving mental and physical well-being.",
+          "verse_count": 11,
+          "verse_numbers": [
+            196,
+            282,
+            297,
+            664,
+            697,
+            705,
+            811,
+            816,
+            873,
+            907,
+            935
+          ]
+        },
+        {
+          "id": "t7-2",
+          "label": "Inner Struggles",
+          "description": "This group highlights the internal conflicts between good and bad within the human heart and the role of intellect in navigating these battles.",
+          "verse_count": 10,
+          "verse_numbers": [
+            13,
+            123,
+            192,
+            204,
+            423,
+            456,
+            543,
+            609,
+            815,
+            879
+          ]
+        },
+        {
+          "id": "t7-3",
+          "label": "Human Body",
+          "description": "This group explores the complexity and significance of the human body as both a physical and spiritual entity.",
+          "verse_count": 4,
+          "verse_numbers": [
+            120,
+            325,
+            396,
+            788
+          ]
+        },
+        {
+          "id": "t7-4",
+          "label": "Worldly Pleasures",
+          "description": "This group discusses the allure and limitations of worldly pleasures and the need for balance in their pursuit.",
+          "verse_count": 18,
+          "verse_numbers": [
+            184,
+            188,
+            261,
+            262,
+            265,
+            268,
+            294,
+            295,
+            310,
+            343,
+            381,
+            436,
+            437,
+            651,
+            675,
+            679,
+            870,
+            874
+          ]
+        },
+        {
+          "id": "t7-5",
+          "label": "Nature of Man",
+          "description": "This group reflects on the mutable and imperfect nature of humans and the challenges in attempting to change inherent traits.",
+          "verse_count": 8,
+          "verse_numbers": [
+            213,
+            287,
+            298,
+            359,
+            534,
+            670,
+            812,
+            823
+          ]
+        },
+        {
+          "id": "t7-6",
+          "label": "Mindfulness and Solitude",
+          "description": "This group considers the challenges of achieving peace through solitude and the importance of mindfulness in overcoming distractions.",
+          "verse_count": 11,
+          "verse_numbers": [
+            203,
+            241,
+            244,
+            301,
+            372,
+            373,
+            374,
+            647,
+            828,
+            829,
+            905
+          ]
+        },
+        {
+          "id": "t7-7",
+          "label": "Desire and Self-Control",
+          "description": "This group examines the constant struggle between desires and self-control and the skepticism around claims of conquering one's senses.",
+          "verse_count": 15,
+          "verse_numbers": [
+            201,
+            206,
+            276,
+            277,
+            280,
+            281,
+            285,
+            290,
+            291,
+            379,
+            380,
+            382,
+            385,
+            627,
+            700
+          ]
+        },
+        {
+          "id": "t7-8",
+          "label": "Hunger and Fulfillment",
+          "description": "This group delves into the dual nature of physical and spiritual hunger and the need for balance to achieve true fulfillment.",
+          "verse_count": 17,
+          "verse_numbers": [
+            191,
+            200,
+            210,
+            278,
+            347,
+            352,
+            386,
+            388,
+            389,
+            397,
+            399,
+            605,
+            610,
+            650,
+            652,
+            665,
+            769
+          ]
+        },
+        {
+          "id": "t7-9",
+          "label": "Collective Happiness",
+          "description": "This group emphasizes the interconnectedness of individual and collective happiness and the role of compassion in societal prosperity.",
+          "verse_count": 7,
+          "verse_numbers": [
+            432,
+            756,
+            853,
+            866,
+            881,
+            883,
+            885
+          ]
+        },
+        {
+          "id": "t7-10",
+          "label": "Mind Management",
+          "description": "This group provides insights on managing the restless mind through balance, empathy, and appropriate discipline.",
+          "verse_count": 6,
+          "verse_numbers": [
+            375,
+            376,
+            378,
+            557,
+            646,
+            667
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t8",
+      "label": "Tree of Life",
+      "description": "This group uses the metaphor of a tree to illustrate the continuous growth and renewal in life, emphasizing care and nurturing.",
+      "verse_count": 55,
+      "children": [
+        {
+          "id": "t8-0",
+          "label": "Nature's Indifference",
+          "description": "This group emphasizes nature's self-sufficient beauty and its indifference to human appreciation.",
+          "verse_count": 5,
+          "verse_numbers": [
+            189,
+            214,
+            564,
+            565,
+            566
+          ]
+        },
+        {
+          "id": "t8-1",
+          "label": "Eternal Growth",
+          "description": "This group focuses on the perpetual renewal and interconnectedness of life, symbolized by the banyan tree.",
+          "verse_count": 21,
+          "children": [
+            {
+              "id": "t8-1-0",
+              "label": "Tree of Renewal",
+              "description": "This group emphasizes the continual renewal and growth of life, likening it to a tree that remains ever fresh through nurturing and care.",
+              "verse_count": 17,
+              "verse_numbers": [
+                154,
+                251,
+                252,
+                253,
+                314,
+                419,
+                520,
+                522,
+                526,
+                559,
+                560,
+                561,
+                562,
+                720,
+                745,
+                746,
+                886
+              ]
+            },
+            {
+              "id": "t8-1-1",
+              "label": "Nurturing Life",
+              "description": "This group focuses on the importance of nurturing and preserving life without over-analyzing or disrupting its natural foundation.",
+              "verse_count": 4,
+              "verse_numbers": [
+                563,
+                817,
+                819,
+                878
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t8-2",
+          "label": "Timing and Patience",
+          "description": "This group highlights the importance of timing and patience in the growth and fruition of life's endeavors.",
+          "verse_count": 12,
+          "verse_numbers": [
+            140,
+            342,
+            476,
+            569,
+            587,
+            597,
+            632,
+            733,
+            780,
+            781,
+            796,
+            902
+          ]
+        },
+        {
+          "id": "t8-3",
+          "label": "Balance and Perspective",
+          "description": "This group discusses the need for balance and the varying perspectives on the value of objects and efforts.",
+          "verse_count": 9,
+          "verse_numbers": [
+            69,
+            300,
+            473,
+            477,
+            536,
+            626,
+            661,
+            868,
+            924
+          ]
+        },
+        {
+          "id": "t8-4",
+          "label": "Resilience and Renewal",
+          "description": "This group illustrates the resilience of life and the cyclical nature of renewal and decay.",
+          "verse_count": 8,
+          "verse_numbers": [
+            122,
+            207,
+            443,
+            478,
+            577,
+            744,
+            789,
+            865
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t9",
+      "label": "Sensory Influence",
+      "description": "This group highlights the impact of sensory experiences on the heart and soul, creating a range of emotions and illusions.",
+      "verse_count": 65,
+      "children": [
+        {
+          "id": "t9-0",
+          "label": "Emotional Duality",
+          "description": "This group explores the dual nature of emotions, emphasizing the balance between happiness and grief and their roles in human experience.",
+          "verse_count": 5,
+          "verse_numbers": [
+            433,
+            434,
+            455,
+            463,
+            466
+          ]
+        },
+        {
+          "id": "t9-1",
+          "label": "Poetic Resonance",
+          "description": "This group highlights the profound impact of emotions on artistic expression, particularly through poetry and music, and their ability to touch the human heart.",
+          "verse_count": 13,
+          "verse_numbers": [
+            52,
+            57,
+            370,
+            409,
+            452,
+            462,
+            464,
+            553,
+            571,
+            618,
+            775,
+            937,
+            938
+          ]
+        },
+        {
+          "id": "t9-2",
+          "label": "Harmony In Opposites",
+          "description": "This group focuses on the beauty that arises from the coordination and balance of opposites, emphasizing the importance of harmony and cooperation.",
+          "verse_count": 17,
+          "verse_numbers": [
+            46,
+            53,
+            105,
+            220,
+            392,
+            403,
+            442,
+            444,
+            446,
+            447,
+            448,
+            449,
+            450,
+            451,
+            468,
+            469,
+            489
+          ]
+        },
+        {
+          "id": "t9-3",
+          "label": "Creative Influencers",
+          "description": "This group celebrates individuals who create beauty and inspiration through various forms of art and innovation, enriching everyday life.",
+          "verse_count": 4,
+          "verse_numbers": [
+            471,
+            472,
+            567,
+            826
+          ]
+        },
+        {
+          "id": "t9-4",
+          "label": "Visual Wonder",
+          "description": "This group emphasizes the sensory impact of visual experiences, exploring how sights can evoke a range of emotions from wonder to compassion.",
+          "verse_count": 26,
+          "children": [
+            {
+              "id": "t9-4-0",
+              "label": "Emotional Response",
+              "description": "This group focuses on how visual stimuli evoke a range of emotions such as love, anger, and compassion, highlighting the emotional impact of visual experiences.",
+              "verse_count": 18,
+              "verse_numbers": [
+                2,
+                87,
+                99,
+                143,
+                217,
+                218,
+                435,
+                438,
+                440,
+                454,
+                457,
+                459,
+                465,
+                467,
+                470,
+                498,
+                721,
+                722
+              ]
+            },
+            {
+              "id": "t9-4-1",
+              "label": "Speechless Wonder",
+              "description": "This group emphasizes the indescribable wonder and speechlessness that arise from experiencing grand and awe-inspiring sights, leading to inner peace and contemplation.",
+              "verse_count": 8,
+              "verse_numbers": [
+                58,
+                112,
+                422,
+                445,
+                495,
+                496,
+                680,
+                687
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

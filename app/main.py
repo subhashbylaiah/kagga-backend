@@ -7,13 +7,33 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from typing import Optional
 from openai import AsyncOpenAI
+from pathlib import Path
+import json
 import os
 
 from app.vector_search import VectorSearch
 from app.rag_pipeline import RAGPipeline
-from app.models import Verse, SearchResult
+from app.models import Verse, SearchResult, TopicNode
 
 limiter = Limiter(key_func=get_remote_address)
+
+DATA_DIR = Path(__file__).parent.parent / "data"
+
+with open(DATA_DIR / "topic_tree.json") as f:
+    TOPIC_TREE: dict = json.load(f)
+
+with open(DATA_DIR / "kaggas.json") as f:
+    VERSES_BY_NUMBER: dict[int, Verse] = {
+        v["id"]: Verse(
+            verse_number=v["id"],
+            kannada_text=v["kannada_text"],
+            transliteration=v["transliteration"],
+            english_translation=v["english_translation"],
+            meaning=v["meaning"],
+            themes=v.get("themes", []),
+        )
+        for v in json.load(f)
+    }
 
 
 class AskRequest(BaseModel):
@@ -33,6 +53,10 @@ class SearchRequest(BaseModel):
     query: str = Field(..., min_length=1)
     themes: Optional[list[str]] = None
     top_k: int = Field(default=10, ge=1, le=50)
+
+
+class VerseBatchRequest(BaseModel):
+    verse_numbers: list[int] = Field(..., min_length=1, max_length=50)
 
 
 vector_search: VectorSearch
@@ -179,6 +203,16 @@ async def facts(lang: str = "en"):
         "DVG launched multiple newspapers between 1906 and 1921, including an English magazine supported by Diwan Visvesvaraya.",
         "DVG lived to 88, passing away on October 7, 1975 — having witnessed a century of change while remaining rooted in timeless wisdom.",
     ]
+
+
+@app.get("/topics", response_model=TopicNode)
+async def topics():
+    return TOPIC_TREE
+
+
+@app.post("/verses/batch", response_model=list[Verse])
+async def verses_batch(body: VerseBatchRequest):
+    return [VERSES_BY_NUMBER[n] for n in body.verse_numbers if n in VERSES_BY_NUMBER]
 
 
 @app.post("/ask", response_model=AskResponse)
